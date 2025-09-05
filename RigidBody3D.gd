@@ -229,19 +229,6 @@ func _physics_process(delta):
 		var steer_force = transform.basis.x * Input.get_axis("ui_left", "ui_right") * 3500.0
 		var steer_point = global_transform.origin - transform.basis.z * 2.0
 		apply_force(steer_force, steer_point - global_transform.origin)
-		var brake_input = Input.get_action_strength("Wheel_brake")
-
-		if brake_input > 0.0:
-			# Local forward axis (+X in your setup)
-			var forward_b = global_transform.basis.x.normalized()
-			
-			# Forward speed component
-			var forward_speed = linear_velocity.dot(forward_b)
-			
-			if abs(forward_speed) > 0.1:
-				# Apply brake force opposite to direction of motion
-				var brake_force = -velocity * brake_input * 2000.0
-				apply_central_force(brake_force)
 
 	# === DRAG (includes flap-induced drag) ===
 	if speed > 1.0:
