@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cufncxcmnb8lq"]
+
+[ext_resource type="PackedScene" uid="uid://2w48cp3juvrj" path="res://Plane_night.tscn" id="1_2gaw2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_2gaw2")]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)

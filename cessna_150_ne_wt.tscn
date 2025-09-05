@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgfdo1c8c8ta"]
+
+[ext_resource type="PackedScene" uid="uid://dct6f8wnwinbp" path="res://cessna 150 NEWt.glb" id="1_8xapn"]
+
+[node name="cessna 150 NEWt" instance=ExtResource("1_8xapn")]

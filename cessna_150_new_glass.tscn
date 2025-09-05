@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbe8sgcv1f6mg"]
+
+[ext_resource type="PackedScene" uid="uid://c66ulp2to63ve" path="res://cessna 150 NEW glass.glb" id="1_irbwn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jwwud"]
+transparency = 1
+cull_mode = 1
+albedo_color = Color(0.458824, 0.458824, 0.458824, 0.439216)
+roughness = 0.0
+refraction_enabled = true
+refraction_scale = 2.08167e-17
+
+[node name="cessna 150 NEW glass" instance=ExtResource("1_irbwn")]
+
+[node name="Glass" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_jwwud")

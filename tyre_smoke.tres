@@ -1,0 +1,26 @@
+
+[gd_resource type="ParticleProcessMaterial" format=3]
+
+[resource]
+gravity = Vector3(0, -2, 0)
+initial_velocity_min = 2.0
+initial_velocity_max = 3.5
+direction = Vector3(0, 1, 0)
+angle_min = -10.0
+angle_max = 10.0
+scale_min = 0.5
+scale_max = 1.5
+scale_curve = CurveTexture
+color = Color(1, 1, 1, 1)
+color_ramp = SubResource(1)
+spread = 45.0
+damping = 1.2
+lifetime_randomness = 0.3
+angular_velocity_min = 10.0
+angular_velocity_max = 30.0
+emission_shape = 0
+emission_sphere_radius = 0.1
+
+[sub_resource type="Gradient" id=1]
+offsets = [0.0, 0.5, 1.0]
+colors = [Color(1, 1, 1, 0.7), Color(0.8, 0.8, 0.8, 0.3), Color(0.8, 0.8, 0.8, 0.0)]

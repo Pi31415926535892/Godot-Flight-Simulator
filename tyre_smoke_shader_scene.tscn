@@ -1,0 +1,17 @@
+
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://tyre_smoke_shader.tres" type="ShaderMaterial" id=1]
+
+[node name="SmokeTest" type="Node3D"]
+
+[node name="Smoke" type="GPUParticles3D" parent="."]
+amount = 30
+lifetime = 0.6
+one_shot = true
+emitting = false
+draw_pass_1 = SubResource(1)
+process_material = ExtResource(1)
+
+[sub_resource type="QuadMesh" id=1]
+size = Vector2(0.5, 0.5)

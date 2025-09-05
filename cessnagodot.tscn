@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb227eau0vclh"]
+
+[ext_resource type="PackedScene" uid="uid://cwj1o12xf5emn" path="res://cessnagodot.glb" id="1_2hb70"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n50op"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.0784314)
+
+[node name="cessnagodot" instance=ExtResource("1_2hb70")]
+
+[node name="Fusalage" parent="." index="0"]
+surface_material_override/1 = SubResource("StandardMaterial3D_n50op")
